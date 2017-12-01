@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Citation Request Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Citation Request</h1>
+		<p>Enter the Title, Author and Year of the Book you are searching separating them by commas.</p>
+		<p>For example, "Harry Potter and the Half Blooded Prince, Rowling, 2006" or "welfare of dogs, stafford, 2006"</p>
+		<form method="POST" action="/citation_table">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search" name="search_citation">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
+
+
+<!--
+<html>
+<head>
+	<title>Request Example</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<form>
+		<div class="input-group">
+			<p>Enter the Author, Title and Year of the Book you are searching separating them by commas.</p>
+			<p>For example, "Rowling, Harry Potter and the Half Blooded Prince, 2006"</p>
+			<br>
+			<input type="text" class="form-control" placeholder="Search">
+			<div class="input-group-btn">
+				<button class="btn btn-default" type="submit">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+	</form>
+
+###
+	<div class="form-group">
+		<label for="usr">Name:</label>
+		<input type="text" class="form-control" id="usr">
+	</div>
+	<form method="POST" action="/citation_search">
+		Search Book : <input type="text" name="citation_search">
+		<input type="submit">
+	</form> 
+####
+
+</body>
+</html> -->
