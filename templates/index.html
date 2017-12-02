@@ -9,25 +9,31 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!-- Custom styles for this template -->
-	<link href="css/layout.css" rel="stylesheet">
-	<link href="css/skin.css" rel="stylesheet">
+	<!-- <link href="css/skin.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="static/css/layout.css">
+	<link rel="stylesheet" href="static/css/skin.css">
 
 </head>
 <body>
 
 	<div class="container">
+
 		<div class="panel panel-default">
-			<div class="panel-heading"><strong>Scopus </strong> <small>Citation Request</small></div>
+			
+			<div class="panel-heading">
+				<strong>Scopus</strong>&nbsp;&nbsp;&nbsp;<small>CITATION REQUEST</small>
+			</div>
+
 			<div class="panel-body">
 
-				<!-- Standard Form -->
+				<!-- Standar Form -->
 				<h4>Select files from your computer</h4>
 				<form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
 					<div class="form-inline">
 						<div class="form-group">
 							<input type="file" name="files[]" id="js-upload-files" multiple>
 						</div>
-						<button type="submit" class="btn btn-sm btn-success" id="js-upload-submit">Upload files</button>
+						<button type="submit" class="btn btn-success" id="js-upload-submit">Upload files</button>
 					</div>
 				</form>
 
@@ -37,9 +43,27 @@
 					Just drag and drop files here
 				</div>
 
+				<!-- Progress Bar -->
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+					</div>
+				</div>
+
+				<!-- Upload Finished -->
+<!-- 				<div class="js-upload-finished">
+					<h3>Processed files</h3>
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
+						<a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-02.jpg</a>
+					</div>
+				</div> -->
+
 			</div>
 		</div>
 	</div> <!-- /container -->
+
+
 
 </body>
 </html>
